@@ -12,12 +12,6 @@ const ColorScreen = () => {
           setColors([...colors, randomRgb()]);
         }}
       />
-      <Button
-        title="Clear Colors"
-        onPress={() => {
-          setColors(colors.r);
-        }}
-      />
       <FlatList
         data={colors}
         renderItem={({ item }) => {
